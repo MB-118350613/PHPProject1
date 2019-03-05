@@ -4,26 +4,47 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 04-Mar-2019, 16:14:10
+    Created on : 05-Mar-2019, 12:55:36
     Author     : 118350613
 */
-body{
-    background-image: url(EBUSINESS_3.jpg) ;
-    
+BODY{
+    background-image: url("EBUSINESS_1.jpg");
 }
-p{
-    color: white;
+div{
+    background-color: #00B0FF ;
+    p{
+    font-family: verdana;
+    font-size: 10px;
 }
-center{
-   
-    background-color:  #00B0FF ;
+
 }
-text{
-    color: white;
+ul {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  color: purple;
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  width: 200px;
+  background-color:purple;
+  border: 16px black;
 }
-a{
-    color: white
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
 }
+
+
+li a:hover {
+  background-color: lightblue;
+  color: yellow;
+}
+
+
 .button{font: bold 14px Arial;
                      text-decoration: none;
                       background-color:darkblue;
@@ -32,7 +53,10 @@ a{
                      border-top: 4px solid #CCCCCC;
                      border-right: 4px solid #333333;
                      border-bottom: 4px solid #333333;
-                     border-left: 4px solid #CCCCCC;}
+                     border-left: 4px solid #CCCCCC;
+}
  .button:hover {
                      background-color:purple;
-                     color: black;}
+                     color: black;
+ }
+ 

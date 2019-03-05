@@ -13,11 +13,14 @@ and open the template in the editor.
 
     </head>
     <body> 
+    <center>
         <ul>
             <li><a class="active" href="CV.HTML.html">CV</a></li>
-            <li><a href="Interest.html"</a>Interests</li>
-            <li><a href="Ebusiness1.php">Ebusiness</a></li>
-        
+            <li><a href="Interest.html">Interests</a></li>
+            <li><a href="BusinessHomepage.html">Ebusiness</a></li>
+        </ul>
+    </center>   
+       
         
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -27,7 +30,6 @@ and open the template in the editor.
 
 
 
-        <p> </p>
         <?php
     
       

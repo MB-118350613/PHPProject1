@@ -4,26 +4,9 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 04-Mar-2019, 16:14:10
+    Created on : 05-Mar-2019, 11:15:18
     Author     : 118350613
 */
-body{
-    background-image: url(EBUSINESS_3.jpg) ;
-    
-}
-p{
-    color: white;
-}
-center{
-   
-    background-color:  #00B0FF ;
-}
-text{
-    color: white;
-}
-a{
-    color: white
-}
 .button{font: bold 14px Arial;
                      text-decoration: none;
                       background-color:darkblue;
@@ -33,6 +16,8 @@ a{
                      border-right: 4px solid #333333;
                      border-bottom: 4px solid #333333;
                      border-left: 4px solid #CCCCCC;}
- .button:hover {
+  .button:hover {
                      background-color:purple;
                      color: black;}
+  div{background-color: lightblue}
+ 

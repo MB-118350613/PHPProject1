@@ -16,8 +16,52 @@ $totalValue = $_POST['txtTotal'];
                 <TITLE>Personal Details</TITLE>
             </HEAD>
              <link rel="stylesheet" href="Ebusiness.css" type="text/css" />
+             <style>
+                  input{
+  background-color: darkblue; 
+  border:32px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btnCalc {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.btnCalc:float  {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btnClear {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.btnClear:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+.btnProceed{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+             </style>
             <body>
-                 <a href ="Ebusiness2.php">Back</a>
+                <a href ="Ebusiness1.php" class="button">Back</a>
                 <div class ="form">
                     
                     <form name =" Details" method="post" action="Ebusiness3.php">

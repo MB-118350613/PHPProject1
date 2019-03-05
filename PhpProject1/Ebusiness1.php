@@ -9,8 +9,59 @@ $_SESSION['txtTotal'] = $totalValue;
         <meta charset="utf-8" />
         <title>Ebusiness </title>
         <link rel="stylesheet" href="Ebusiness.css" type="text/css" />
+        <style>
+            input{
+  background-color: darkblue; 
+  border:32px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btnCalc {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.btnCalc:float  {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btnClear {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.btnClear:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+.btnProceed{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.btnProceed:hover {
+  background-color: #f44336;
+  color: white;
+           
+
+</style>
+       
     </head>
-     <a href ="Ebusiness2.php">Back</a>
+    <a href ="BusinessHomepage.html" class="button">Back</a>
         <body> 
         <div class="form">
             <form name="intCalc" method="post" action="Ebusiness2.php">
@@ -47,11 +98,11 @@ $_SESSION['txtTotal'] = $totalValue;
                     <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>
                 </tr>
                 <tr>
-                    <td>Discount @ 30%</td>
+                    <td>Discount @ 10%</td>
                     <td><input type="text" id="txtDisc" name="txtDisc" readonly /></td>
                 </tr>
                 <tr>
-                    <td>+ VAT @ 40%</td>
+                    <td>+ VAT @ 20%</td>
                     <td><input type="text" id="txtVAT" name="txtVAT" readonly /></td>
                 </tr>
                 <tr>
@@ -101,8 +152,8 @@ $_SESSION['txtTotal'] = $totalValue;
                 //function for calculationg the values//
                 function calculation(parmsTotal) {
                     var subTotal = parseFloat(parmsTotal);
-                    var discCalc = parseFloat(subTotal * .30);
-                    var vatCalc= parseFloat(subTotal * .40);   
+                    var discCalc = parseFloat(subTotal * .10);
+                    var vatCalc= parseFloat(subTotal * .20);   
                     var total = parseFloat(subTotal - discCalc + vatCalc);
                    
                     //Inserting thrm intp thr correct fields//

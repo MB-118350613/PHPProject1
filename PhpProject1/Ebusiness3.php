@@ -5,18 +5,21 @@
         <link rel="stylesheet" type="text/css" href="Ebusiness2.css" />
     </head>
     <body>
-        <a href ="Ebusiness2.php">Back</a>
+        <a href ="Ebusiness2.php" class="button">Back</a>
     <center>
         <?php
-        
+
         session_start();
         $totalValue2 = $_POST['txtTotal'];
         $fullNameValue =$_POST['txtName'];
+        $PhoneNumber = $_POST['txtNum'];
                 echo "<br></br>";
                 echo "<br></br>";
                 echo " User Name:".$fullNameValue.".";
                 echo "<br></br>";
-                echo " The payment needed is  " .$totalValue2.".";
+                echo " The payment needed is $ " .$totalValue2.".";
+                echo "<br></br>";
+                echo " Phone number is " .$PhoneNumber.".";
         ?>
         </center>    
     </body>

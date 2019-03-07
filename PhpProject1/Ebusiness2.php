@@ -57,8 +57,8 @@ input[type=text]{
                                     <td><input type="text" id="txtName" name="txtName" value="" required=""/></td>  
                                 </tr>
                                  <tr>
-                                    <td>Phone Number</td>
-                                    <td><input type="text" id="txtNum" name="txtNum"  value="" required=""/></td>  
+                                    <td>Email</td>
+                                    <td><input type="text" id="txtEmail" name="txtEmail"  value="" required=""/></td>  
                                 </tr>
                                  <tr>
                                     <td>Password</td>

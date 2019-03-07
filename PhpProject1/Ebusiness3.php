@@ -3,6 +3,9 @@
     <head>
         <title> Receipt</title>
         <link rel="stylesheet" type="text/css" href="Ebusiness2.css" />
+        <style>
+            
+        </style>
     </head>
     <body>
         <a href ="Ebusiness2.php" class="button">Back</a>
@@ -14,13 +17,13 @@
         session_start();
         $totalValue2 = $_POST['txtTotal'];
         $fullNameValue =$_POST['txtName'];
-        $PhoneNumber = $_POST['txtNum'];
+        $Email = $_POST['txtEmail'];
                 echo "<br></br>";
                 echo " User Name:".$fullNameValue.".";
                 echo "<br></br>";
                 echo " The payment needed is $ " .$totalValue2.".";
                 echo "<br></br>";
-                echo " Phone number is " .$PhoneNumber.".";
+                echo " Email is " .$Email.".";
         ?>
         </center>
         </table>

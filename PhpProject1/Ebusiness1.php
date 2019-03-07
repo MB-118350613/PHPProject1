@@ -10,7 +10,17 @@ $_SESSION['txtTotal'] = $totalValue;
         <title>Ebusiness </title>
         <link rel="stylesheet" href="Ebusiness.css" type="text/css" />
         <style>
-            input{
+            input[type=text]{
+                width: 60px;
+                -webkit-transition: width .35s ease-in-out;
+                transition: width .35s ease-in-out;
+            }
+            input[type=text]:focus{
+                width: 250px;
+            }
+            
+            
+            input[type=button]{
   background-color: darkblue; 
   border:32px;
   color: white;
@@ -20,20 +30,34 @@ $_SESSION['txtTotal'] = $totalValue;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+          input[type=submit]{
+  background-color: darkblue; 
+  border:32px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
-.btnCalc {
+.button1 {
   background-color: white; 
   color: black; 
   border: 2px solid #4CAF50;
 }
 
-.btnCalc:float  {
-  background-color: #4CAF50;
-  color: white;
+.button1:hover  {
+  background-color: #006600;
+  color: black;
 }
 
 .btnClear {
@@ -43,20 +67,20 @@ $_SESSION['txtTotal'] = $totalValue;
 }
 
 .btnClear:hover{
-  background-color: #008CBA;
-  color: white;
+    background-color: #006600;
+  color: black;
 }
-
-.btnProceed{
+.btnProcceed {
   background-color: white; 
   color: black; 
-  border: 2px solid #f44336;
+  border: 2px solid #008CBA;
 }
 
-.btnProceed:hover {
-  background-color: #f44336;
-  color: white;
-           
+.btnProceed:hover{
+    background-color: #006600;
+  color: black;
+
+
 
 </style>
        
@@ -74,7 +98,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 </tr>
                 <tr>
                     <td>Blockchain @ 1000</td>
-                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1000" /></td>
+                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1000" required/></td>
                 </tr>
                 <tr>
                     <td>Immersive @2000</td>
@@ -114,9 +138,9 @@ $_SESSION['txtTotal'] = $totalValue;
        
         <br />
             <center>
-            <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
-            <input type="button" name="btnClear" id="btnClear" onclick="AmountClear()" value="Clear"/>
-            <input type="submit" name="btnProceed" id="btnProceed" onclick="" value="Proceed"/>
+            <input type="button" name="btnCalc" class='button1' id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
+            <input type="button" name="btnClear" class='btnClear' id="btnClear" onclick="AmountClear()" value="Clear"/>
+            <input type="submit" name="btnProceed" class='btnProceed' id="btnProceed" onclick="" value="Proceed"/>
         </center>
             </form>
         </div>

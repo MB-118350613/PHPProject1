@@ -9,7 +9,7 @@ and open the template in the editor.
 
 */
 body{
-background-image: url("MAIN_PAGE_2.jpg");
+background-image: url("MAIN_PAGE_3.jpg");
 
 p{
     font-family: verdana;
@@ -26,7 +26,7 @@ ul {
   margin: auto;
   padding: auto;
   width: 600px;
-  background-color:purple;
+  background-color:#006633;
   border: 16px black;
 }
 
@@ -39,6 +39,6 @@ li a {
 
 
 li a:hover {
-  background-color: lightblue;
-  color: yellow;
+    background-color: #00ccff;
+  color: red;
 }

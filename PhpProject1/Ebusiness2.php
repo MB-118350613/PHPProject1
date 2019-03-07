@@ -27,38 +27,19 @@ $totalValue = $_POST['txtTotal'];
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
   cursor: pointer;
 }
-
-.btnCalc {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
-}
-
-.btnCalc:float  {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.btnClear {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-}
-
-.btnClear:hover{
-  background-color: #008CBA;
-  color: white;
-}
-
-.btnProceed{
-  background-color: white; 
-  color: black; 
-  border: 2px solid #f44336;
-}
+input[type=text]{
+                width: 60px;
+                -webkit-transition: width .35s ease-in-out;
+                transition: width .35s ease-in-out;
+            }
+            input[type=text]:focus{
+                width: 250px;
+            }
+            
              </style>
             <body>
                 <a href ="Ebusiness1.php" class="button">Back</a>
@@ -73,23 +54,23 @@ $totalValue = $_POST['txtTotal'];
                                 </tr>
                                 <tr>
                                     <td>Name</td>
-                                    <td><input type="text" id="txtName" name="txtName" value=""/></td>  
+                                    <td><input type="text" id="txtName" name="txtName" value="" required=""/></td>  
                                 </tr>
                                  <tr>
                                     <td>Phone Number</td>
-                                    <td><input type="text" id="txtNum" name="txtNum" value=""/></td>  
+                                    <td><input type="text" id="txtNum" name="txtNum" pattern='[0-9]' value="" required=""/></td>  
                                 </tr>
                                  <tr>
                                     <td>Password</td>
-                                    <td><input type="text" id="txtPassword" name="txtPassword" value=""/></td>  
+                                    <td><input type="password" id="txtPassword" name="txtPassword" value="" required=""/></td>  
                                 </tr>
                                 <tr>                               
-                                    <td><input type="hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue ;?>"/></td>  
+                                    <td><input type="hidden" class='btnCalc' id="txtTotal" name="txtTotal" value="<?php echo $totalValue ;?>"/></td>  
                                 </tr>
                             </table>
                         </center>
                         <center>
-                            <input type="submit" name="btnContinue" id="btnContinue" oneclick="" value="Continue"/>
+                            <input type="submit" name="btnContinue"  id="btnContinue" oneclick="" value="Continue"/>
                         </Center>
                     </form>
                 </div>

@@ -19,5 +19,7 @@ and open the template in the editor.
   .button:hover {
                      background-color:purple;
                      color: black;}
-  div{background-color: lightblue}
+  body{
+      background-color: lightblue;
+  }
  

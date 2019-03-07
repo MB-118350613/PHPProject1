@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 BODY{
-    background-image: url("EBUSINESS_1.jpg");
+    background-image: url('MAIN_PAGE_3.jpg');
 }
 div{
     background-color: #00B0FF ;
@@ -31,3 +31,6 @@ a{
  .button:hover {
                      background-color:purple;
                      color: black;}
+ table{
+     border-color: white 4px;
+ }

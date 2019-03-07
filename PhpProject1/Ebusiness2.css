@@ -8,15 +8,17 @@ and open the template in the editor.
     Author     : 118350613
 */
 body{
-    background-image: url(EBUSINESS_3.jpg) ;
+    background-image:url('MAIN_PAGE_3.jpg');
     
 }
 p{
     color: white;
+    font-size: 24px;
 }
 center{
    
     background-color:  #00B0FF ;
+     font-size: 24px;
 }
 text{
     color: white;
@@ -36,3 +38,6 @@ a{
  .button:hover {
                      background-color:purple;
                      color: black;}
+ table{
+     color: white;
+ }

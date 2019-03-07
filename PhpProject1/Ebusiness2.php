@@ -58,7 +58,7 @@ input[type=text]{
                                 </tr>
                                  <tr>
                                     <td>Phone Number</td>
-                                    <td><input type="text" id="txtNum" name="txtNum" pattern='[0-9]' value="" required=""/></td>  
+                                    <td><input type="text" id="txtNum" name="txtNum"  value="" required=""/></td>  
                                 </tr>
                                  <tr>
                                     <td>Password</td>

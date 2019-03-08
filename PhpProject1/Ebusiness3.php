@@ -18,12 +18,15 @@
         $totalValue2 = $_POST['txtTotal'];
         $fullNameValue =$_POST['txtName'];
         $Email = $_POST['txtEmail'];
+        $Pin=$_POST['txtPassword'];
                 echo "<br></br>";
                 echo " User Name:".$fullNameValue.".";
                 echo "<br></br>";
                 echo " The payment needed is $ " .$totalValue2.".";
                 echo "<br></br>";
                 echo " Email is " .$Email.".";
+                echo "<br></br>";
+                echo "Pin is ".$Pin.".";
         ?>
         </center>
         </table>

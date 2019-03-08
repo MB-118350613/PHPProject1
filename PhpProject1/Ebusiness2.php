@@ -61,8 +61,8 @@ input[type=text]{
                                     <td><input type="text" id="txtEmail" name="txtEmail"  value="" required=""/></td>  
                                 </tr>
                                  <tr>
-                                    <td>Password</td>
-                                    <td><input type="password" id="txtPassword" name="txtPassword" value="" required=""/></td>  
+                                    <td>Pin{Four digit's}</td>
+                                    <td><input type="password" id="txtPassword" name="txtPassword" pattern="[0-9]{4}" value="" required=""/></td>  
                                 </tr>
                                 <tr>                               
                                     <td><input type="hidden" class='btnCalc' id="txtTotal" name="txtTotal" value="<?php echo $totalValue ;?>"/></td>  
